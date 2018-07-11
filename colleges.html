@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Cabeza del documento -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Nombre del documento -->
+        <title> UAT - Universidades </title>
+        <!-- Uso del logo en el documento -->
+        <link rel="icon" href="images/pc.png">
+        <!-- Uso de estilos en el documento -->
+        <link rel="stylesheet" href="styles/style.css">
+        <!-- Uso de iconos en el documento -->
+        <link rel="stylesheet" href="styles/fontello.css">
+    </head>
+    <!-- Cuerpo del documento -->
+    <body>
+        <!-- Cabecera de la página -->
+        <header>
+            <!-- Título principal de la cabecera -->
+            <h1> Universidades amigas del territorio <small> Fedesoft </small>
+            </h1>
+            <hr size="4">
+        </header>
+        <!-- Menú de navegación de la página -->
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="index.html"> Inicio </a>
+                </li>
+                <li>
+                    <a href="#universidades"> Universidades </a>
+                </li>
+                <li>
+                    <a href=""> Proyectos </a>
+                </li>
+                <li>
+                    <a href=""> Sectores </a>
+                </li>
+                <hr size="1">
+            </ul>
+        </nav>
+        <!-- Parte principal de la página -->
+        <main>
+            <article>
+                <section id="universidades">
+                    <h3 style="text-align: left; color: #2DB3FF;"> Gran Colombia </h3>
+                    <h4> Dirección <p> Calle 1234 </p> </h4>
+                    <h4> Teléfono <p> 1213451335 </p> </h4>
+                    <h4> Descripción <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,  </p> </h4>
+                    <br>
+                    <h3 style="text-align: center; color: #2DB3FF;"> Autónoma </h3>
+                    <h4> Dirección <p> Calle 1234 </p> </h4>
+                    <h4> Teléfono <p> 1213451335 </p> </h4>
+                    <h4> Descripción <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,  </p> </h4>
+                    <br>
+                    <h3 style="text-align: right; color: #2DB3FF;"> Jorge Tadeo Lozano </h3>
+                    <h4> Dirección <p> Calle 1234 </p> </h4>
+                    <h4> Teléfono <p> 1213451335 </p> </h4>
+                    <h4> Descripción <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel,  </p> </h4>
+                    <center>
+                        <button class="botones" onclick="registraruni();" style="float: left;"> Registrarse </button>
+                        <button class="botones" onclick="loginuni();" style="float: right;"> Ingresar </button>
+                    </center>
+                </section>
+            </article>
+            <aside>
+                <div style="height: 100%;">
+                    <button class="slider" style="float: left;" onclick="before();">
+                        <span class="iconos">
+                            <i class="icon-left-open"></i>
+                        </span>
+                    </button>
+                    <img id="carousel" style="margin-top: 10%; margin-bottom: 10%; height: 75%; width: 60%; margin-left: 7%;" src="images/universidades.jpg">
+                    <button class="slider" style="float: right;" onclick="after();">
+                        <span class="iconos">
+                            <i class="icon-right-open"></i>
+                        </span>
+                    </button>
+                </div>
+                <div>
+                    <form id="loginuni" method="POST">
+                        <h2 style="text-align: center;"> Ingresar </h2>
+                        <label for="Correo electrónico"> Correo electrónico: </label>
+                        <input type="email" placeholder="Ejemplo: universidad@hotmail.com...">
+                        <br>
+                        <label for="Contraseña"> Contraseña: </label>
+                        <input type="password" placeholder="Ejemplo: 123456...">
+                        <br>
+                        <input type="submit" value="Ingresar">
+                        <br>
+                    </form>
+                    <form id="registraruni" method="POST">
+                        <h2 style="text-align: center;"> Registrarse </h2>
+                        <label for="Nombre de la universidad"> Nombre de la universidad: </label>
+                        <input type="text" placeholder="Ejemplo: San Martín...">
+                        <br>
+                        <label for="Correo electrónico"> Correo electrónico: </label>
+                        <input type="email" placeholder="Ejemplo: universidad@hotmail.com...">
+                        <br>
+                        <label for="Localidad"> Localidad: </label>
+                        <input type="text" placeholder="Ejemplo: Candelaria...">
+                        <br>
+                        <label for="Contraseña"> Contraseña: </label>
+                        <input type="password" placeholder="Ejemplo: 123456...">
+                        <br>
+                        <label for="Confirmar contraseña"> Confirmar contraseña: </label>
+                        <input type="password" placeholder="Repite la contraseña...">
+                        <br>
+                        <input type="submit" value="Registrarse">
+                        <br>
+                    </form>
+                </div>
+            </aside>
+        </main>
+        <!-- Pie de la página -->
+        <footer>
+            <!-- Referencias -->
+            <p style="width: 32%;">
+                <strong style="margin-left: 37%; margin-right: 37%;"> Redes sociales </strong>
+            </p>
+            <a href="https://twitter.com" title="Twitter" style="margin-left: 3%; margin-right: 3%;">
+                <span class="iconos">
+                    <i class="icon-twitter"></i>
+                </span>
+            </a>
+            <a href="https://www.facebook.com" title="Facebook" style="margin-left: 3%; margin-right: 3%;">
+                <span class="iconos">
+                    <i class="icon-facebook"></i>
+                </span>
+            </a>
+            <a href="https://www.instagram.com" title="Instagram" style="margin-left: 3%; margin-right: 3%;">
+                <span class="iconos">
+                    <i class="icon-instagram"></i>
+                </span>
+            </a>
+            <label style="margin-left: 3%; margin-right: 3%;"> ¿Necesitas más información? Llámanos y te informaremos sobre lo que necesites. </label>
+            <img src="images/conection.png" id="logo" style="margin-left: 3%; margin-right: 3%;">
+            <p style="text-align: center; font-size: 0.85714rem;"> Copyright © 2018 Fedesoft UAT. Todos los derechos reservados. El diseño de Modulos tiene patente pendiente y el diseño industrial está protegido. </p>
+            <center>
+                <p style="font-size: 0.85714rem; margin: 0%!important"> Orgullo miembro de: </p>
+                <img style="margin: 0%!important; width: 50%; height: 50%;" src="images/fedesoft.png">
+            </center>
+        </footer>
+        <!-- Uso de javascript para hacer dinámica la página web -->
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
